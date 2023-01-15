@@ -1,0 +1,11 @@
+namespace: library
+bases:
+  - ../../common/library
+
+configMapGenerator:
+  - name: library-helm-values
+    files:
+      - values.yaml=dev-values.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true

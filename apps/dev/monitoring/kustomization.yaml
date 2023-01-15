@@ -1,0 +1,14 @@
+namespace: monitoring
+bases:
+  - ../../common/monitoring
+
+configMapGenerator:
+  - name: prometheus-helm-values
+    files:
+      - values.yaml=prometheus-dev-values.yaml
+  - name: grafana-helm-values
+    files:
+      - values.yaml=grafana-dev-values.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
