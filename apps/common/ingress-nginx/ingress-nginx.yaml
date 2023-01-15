@@ -279,12 +279,12 @@ spec:
     - IPv4
   ports:
     - name: http
-      port: 80
+      port: 44357
       protocol: TCP
       targetPort: http
       appProtocol: http
     - name: https
-      port: 443
+      port: 44391
       protocol: TCP
       targetPort: https
       appProtocol: https
