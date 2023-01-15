@@ -16,7 +16,7 @@ ingress:
   #      - chart-example.local
 
 image:
-  repository: ghcr.io/ghasszak/apiDevOpsGL5
+  repository: ghcr.io/ghasszak/infraDevOpsGL5
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
